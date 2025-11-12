@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCalculator", "BasicCal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerApplication", "CustomerApplication\CustomerApplication.csproj", "{CF65823A-AED7-494C-B2A4-3C131A7604FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTrackingSystem", "LibraryTrackingSystem\LibraryTrackingSystem.csproj", "{41FAE2BB-84FD-46E7-92B4-D89EB84949BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CF65823A-AED7-494C-B2A4-3C131A7604FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF65823A-AED7-494C-B2A4-3C131A7604FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF65823A-AED7-494C-B2A4-3C131A7604FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41FAE2BB-84FD-46E7-92B4-D89EB84949BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FAE2BB-84FD-46E7-92B4-D89EB84949BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FAE2BB-84FD-46E7-92B4-D89EB84949BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FAE2BB-84FD-46E7-92B4-D89EB84949BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
