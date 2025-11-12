@@ -5,7 +5,7 @@
 ![Windows Forms](Images/WF.png)
 ![SQL Server](Images/DB.png)
 
-**Modern ve kullanıcı dostu bir kütüphane yönetim sistemi**
+**A modern and user-friendly library management system**
 
 [![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4?style=for-the-badge&logo=dotnet)](https://dotnet.microsoft.com/)
 [![Windows Forms](https://img.shields.io/badge/Windows%20Forms-WinForms-0078D4?style=for-the-badge&logo=windows)](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/)
@@ -16,99 +16,99 @@
 
 ---
 
-## 📋 İçindekiler
+## 📋 Table of Contents
 
-- [Proje Hakkında](#-proje-hakkında)
-- [Özellikler](#-özellikler)
-- [Teknolojiler](#-teknolojiler)
-- [Gereksinimler](#-gereksinimler)
-- [Kurulum](#-kurulum)
-- [Veritabanı Yapısı](#-veritabanı-yapısı)
-- [Kullanım Kılavuzu](#-kullanım-kılavuzu)
-- [Proje Yapısı](#-proje-yapısı)
-- [Ekran Görüntüleri](#-ekran-görüntüleri)
-- [Geliştirme Notları](#-geliştirme-notları)
-- [Katkıda Bulunma](#-katkıda-bulunma)
-- [Lisans](#-lisans)
-
----
-
-## 🎯 Proje Hakkında
-
-**Library Tracking System**, Windows Forms teknolojisi kullanılarak geliştirilmiş profesyonel bir kütüphane yönetim sistemidir. Bu uygulama, kitapların kayıt altına alınması, güncellenmesi, silinmesi ve aranması gibi temel CRUD (Create, Read, Update, Delete) işlemlerini gerçekleştirmenize olanak sağlar.
-
-Uygulama, SQL Server veritabanı ile entegre çalışarak kitapların tüm bilgilerini güvenli bir şekilde saklar ve yönetir. Modern ve kullanıcı dostu arayüzü sayesinde kolayca kullanılabilir.
-
-### 🎨 Öne Çıkan Özellikler
-
-- ✨ **Modern Arayüz**: Renkli butonlar ve düzenli form yapısı
-- 🔍 **Anlık Arama**: Yazdıkça arama yapma özelliği
-- 📊 **DataGridView Entegrasyonu**: Tüm kitapları tablo formatında görüntüleme
-- 🔒 **Güvenli Veri Yönetimi**: SQL Server ile güvenli veri saklama
-- ⚡ **Hızlı ve Etkili**: Optimize edilmiş veritabanı sorguları
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Technologies](#-technologies)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [Database Structure](#-database-structure)
+- [Usage Guide](#-usage-guide)
+- [Project Structure](#-project-structure)
+- [Screenshots](#-screenshots)
+- [Development Notes](#-development-notes)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
-## ✨ Özellikler
+## 🎯 About the Project
 
-### 📖 Kitap Yönetimi
+**Library Tracking System** is a professional library management system developed using Windows Forms technology. This application allows you to perform basic CRUD (Create, Read, Update, Delete) operations such as registering, updating, deleting, and searching books.
 
-#### ✅ Kitap Ekleme
-- Yeni kitapları veritabanına ekleme
-- Tüm kitap bilgilerini (başlık, yazar, tür, dil, yayınevi, sayfa sayısı, yayın yılı) kaydetme
-- Otomatik ID oluşturma
-- Başarı mesajı gösterimi
+The application works integrated with SQL Server database to securely store and manage all book information. Thanks to its modern and user-friendly interface, it can be easily used.
 
-#### ✅ Kitap Güncelleme
-- Mevcut kitap bilgilerini düzenleme
-- DataGridView'den seçilen kitabın bilgilerini form alanlarına yükleme
-- Güncellenmiş bilgileri veritabanına kaydetme
+### 🎨 Key Features
 
-#### ✅ Kitap Silme
-- Kitapları veritabanından silme
-- ID kontrolü ile güvenli silme işlemi
-- Silme onay mesajı
+- ✨ **Modern Interface**: Colorful buttons and organized form structure
+- 🔍 **Real-time Search**: Search-as-you-type feature
+- 📊 **DataGridView Integration**: Display all books in table format
+- 🔒 **Secure Data Management**: Secure data storage with SQL Server
+- ⚡ **Fast and Efficient**: Optimized database queries
 
-#### ✅ Kitap Listeleme
-- Tüm kitapları DataGridView'de görüntüleme
-- Otomatik sütun genişletme
-- Salt okunur mod (yanlışlıkla düzenlemeyi önler)
+---
 
-#### ✅ Detay Görüntüleme
-- Tablodan seçilen kitabın detaylarını form alanlarına yükleme
-- Tek tıkla kitap bilgilerine erişim
+## ✨ Features
 
-### 🔍 Arama Özellikleri
+### 📖 Book Management
 
-- ✅ **Anlık Arama**: Yazdıkça arama yapma
-- ✅ **Çoklu Alan Arama**: 
+#### ✅ Add Book
+- Add new books to the database
+- Save all book information (title, author, genre, language, publisher, page count, publication year)
+- Automatic ID generation
+- Success message display
+
+#### ✅ Update Book
+- Edit existing book information
+- Load selected book information from DataGridView to form fields
+- Save updated information to database
+
+#### ✅ Delete Book
+- Delete books from database
+- Secure deletion with ID validation
+- Deletion confirmation message
+
+#### ✅ List Books
+- Display all books in DataGridView
+- Automatic column expansion
+- Read-only mode (prevents accidental editing)
+
+#### ✅ View Details
+- Load selected book details from table to form fields
+- One-click access to book information
+
+### 🔍 Search Features
+
+- ✅ **Real-time Search**: Search as you type
+- ✅ **Multi-field Search**: 
   - ID
-  - Başlık (Title)
-  - Yazar (Author)
-  - Tür (Genre)
-- ✅ **Filtreleme**: Arama sonuçlarını anlık olarak filtreleme
-- ✅ **Güvenli Arama**: SQL injection koruması
+  - Title
+  - Author
+  - Genre
+- ✅ **Filtering**: Filter search results in real-time
+- ✅ **Secure Search**: SQL injection protection
 
-### 📊 Veri Alanları
+### 📊 Data Fields
 
-Her kitap için aşağıdaki bilgiler saklanır:
+The following information is stored for each book:
 
-| Alan | Açıklama | Tip |
-|------|----------|-----|
-| **ID** | Otomatik oluşturulan benzersiz kimlik | INT (Identity) |
-| **Title** | Kitap başlığı | NVARCHAR(200) |
-| **Author** | Yazar adı | NVARCHAR(100) |
-| **Genre** | Kitap türü/kategorisi | NVARCHAR(50) |
-| **Language** | Kitap dili | NVARCHAR(50) |
-| **Publisher** | Yayınevi | NVARCHAR(100) |
-| **PageCount** | Sayfa sayısı | INT |
-| **PublicationYear** | Yayın yılı | INT |
+| Field | Description | Type |
+|-------|-------------|------|
+| **ID** | Automatically generated unique identifier | INT (Identity) |
+| **Title** | Book title | NVARCHAR(200) |
+| **Author** | Author name | NVARCHAR(100) |
+| **Genre** | Book category/genre | NVARCHAR(50) |
+| **Language** | Book language | NVARCHAR(50) |
+| **Publisher** | Publisher | NVARCHAR(100) |
+| **PageCount** | Number of pages | INT |
+| **PublicationYear** | Publication year | INT |
 
 ---
 
-## 🛠️ Teknolojiler
+## 🛠️ Technologies
 
-### Kullanılan Teknolojiler
+### Technologies Used
 
 ![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4?style=flat-square&logo=dotnet)
 ![Windows Forms](https://img.shields.io/badge/Windows%20Forms-WinForms-0078D4?style=flat-square&logo=windows)
@@ -116,15 +116,15 @@ Her kitap için aşağıdaki bilgiler saklanır:
 ![C#](https://img.shields.io/badge/C%23-8.0-239120?style=flat-square&logo=c-sharp)
 ![ADO.NET](https://img.shields.io/badge/ADO.NET-Data%20Access-512BD4?style=flat-square)
 
-- **.NET Framework 4.7.2**: Uygulama çerçevesi
-- **Windows Forms**: Kullanıcı arayüzü teknolojisi
-- **SQL Server Express**: Veritabanı yönetim sistemi
-- **ADO.NET**: Veritabanı erişim teknolojisi
-- **C#**: Programlama dili
-- **DataGridView**: Veri görüntüleme kontrolü
-- **SqlDataAdapter**: Veri adaptörü
+- **.NET Framework 4.7.2**: Application framework
+- **Windows Forms**: User interface technology
+- **SQL Server Express**: Database management system
+- **ADO.NET**: Database access technology
+- **C#**: Programming language
+- **DataGridView**: Data display control
+- **SqlDataAdapter**: Data adapter
 
-### Mimari Yapı
+### Architecture
 
 ```
 ┌─────────────────┐
@@ -147,58 +147,58 @@ Her kitap için aşağıdaki bilgiler saklanır:
 
 ---
 
-## 📦 Gereksinimler
+## 📦 Requirements
 
-### Sistem Gereksinimleri
+### System Requirements
 
-- ✅ **İşletim Sistemi**: Windows 7 veya üzeri
-- ✅ **.NET Framework**: 4.7.2 veya üzeri
-- ✅ **SQL Server**: Express Edition veya üzeri
-- ✅ **RAM**: Minimum 2 GB (önerilen 4 GB)
-- ✅ **Disk Alanı**: Minimum 500 MB
+- ✅ **Operating System**: Windows 7 or higher
+- ✅ **.NET Framework**: 4.7.2 or higher
+- ✅ **SQL Server**: Express Edition or higher
+- ✅ **RAM**: Minimum 2 GB (4 GB recommended)
+- ✅ **Disk Space**: Minimum 500 MB
 
-### Geliştirme Ortamı
+### Development Environment
 
-- ✅ **Visual Studio**: 2017 veya üzeri
-- ✅ **SQL Server Management Studio (SSMS)**: Veritabanı yönetimi için
+- ✅ **Visual Studio**: 2017 or higher
+- ✅ **SQL Server Management Studio (SSMS)**: For database management
 - ✅ **.NET Framework 4.7.2 SDK**
 
-### Veritabanı Gereksinimleri
+### Database Requirements
 
-- ✅ SQL Server Express 2014 veya üzeri
-- ✅ Windows Authentication veya SQL Server Authentication
-- ✅ Veritabanı oluşturma izinleri
+- ✅ SQL Server Express 2014 or higher
+- ✅ Windows Authentication or SQL Server Authentication
+- ✅ Database creation permissions
 
 ---
 
-## 🚀 Kurulum
+## 🚀 Installation
 
-### 1️⃣ Projeyi İndirin
+### 1️⃣ Download the Project
 
 ```bash
-# GitHub'dan klonlayın
+# Clone from GitHub
 git clone https://github.com/Kaaner4mir/WindowsFormLabor.git
 
-# Proje dizinine gidin
+# Navigate to project directory
 cd WindowsFormLabor/LibraryTrackingSystem
 ```
 
-Veya ZIP dosyası olarak indirip açabilirsiniz.
+Or download as ZIP file and extract it.
 
-### 2️⃣ Veritabanını Oluşturun
+### 2️⃣ Create the Database
 
-SQL Server Management Studio'yu açın ve aşağıdaki SQL scriptini çalıştırın:
+Open SQL Server Management Studio and run the following SQL script:
 
 ```sql
--- Veritabanını oluştur
+-- Create database
 CREATE DATABASE BooksDB;
 GO
 
--- Veritabanını kullan
+-- Use database
 USE BooksDB;
 GO
 
--- Books tablosunu oluştur
+-- Create Books table
 CREATE TABLE Books (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Title NVARCHAR(200) NOT NULL,
@@ -211,7 +211,7 @@ CREATE TABLE Books (
 );
 GO
 
--- Örnek veri ekle (isteğe bağlı)
+-- Insert sample data (optional)
 INSERT INTO Books (Title, Author, Genre, Language, Publisher, PageCount, PublicationYear)
 VALUES 
     ('1984', 'George Orwell', 'Dystopian Fiction', 'English', 'Secker & Warburg', 328, 1949),
@@ -222,383 +222,352 @@ GO
 
 ![SQL File Structure](Images/SqlFileStructure.png)
 
-### 3️⃣ Connection String'i Yapılandırın
+### 3️⃣ Configure Connection String
 
-`Form1.cs` dosyasını açın ve connection string'i kendi SQL Server bilgilerinize göre güncelleyin:
+Open `Form1.cs` file and update the connection string with your SQL Server information:
 
 ```csharp
-// Satır 21'deki connection string'i düzenleyin
+// Edit the connection string on line 21
 SqlConnection _connection = new SqlConnection(@"Data Source=YOUR_SERVER_NAME\SQLEXPRESS;Initial Catalog=BooksDB;Integrated Security=True;Encrypt=False");
 ```
 
-**Önemli Notlar:**
+**Important Notes:**
 
-- `YOUR_SERVER_NAME` kısmını kendi bilgisayar adınızla değiştirin
-- SQL Server instance adınızı öğrenmek için:
-  - SQL Server Management Studio'da bağlantı penceresine bakın
-  - Veya Windows'ta `hostname` komutunu çalıştırın
-- **Windows Authentication** kullanıyorsanız (önerilen):
+- Replace `YOUR_SERVER_NAME` with your computer name
+- To find your SQL Server instance name:
+  - Check the connection window in SQL Server Management Studio
+  - Or run `hostname` command in Windows
+- If using **Windows Authentication** (recommended):
   ```csharp
   @"Data Source=YOUR_SERVER_NAME\SQLEXPRESS;Initial Catalog=BooksDB;Integrated Security=True;Encrypt=False"
   ```
-- **SQL Server Authentication** kullanıyorsanız:
+- If using **SQL Server Authentication**:
   ```csharp
   @"Data Source=YOUR_SERVER_NAME\SQLEXPRESS;Initial Catalog=BooksDB;User ID=your_username;Password=your_password;Encrypt=False"
   ```
-- **LocalDB** kullanıyorsanız:
+- If using **LocalDB**:
   ```csharp
   @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BooksDB;Integrated Security=True;Encrypt=False"
   ```
 
-### 4️⃣ Projeyi Derleyin ve Çalıştırın
+### 4️⃣ Build and Run the Project
 
-1. Visual Studio'da `LibraryTrackingSystem.sln` dosyasını açın
-2. `Build > Build Solution` (Ctrl+Shift+B) menüsünden projeyi derleyin
-3. `Debug > Start Debugging` (F5) veya `Start Without Debugging` (Ctrl+F5) ile çalıştırın
+1. Open `LibraryTrackingSystem.sln` file in Visual Studio
+2. Build the project from `Build > Build Solution` (Ctrl+Shift+B)
+3. Run with `Debug > Start Debugging` (F5) or `Start Without Debugging` (Ctrl+F5)
 
-### 5️⃣ İlk Kullanım
+### 5️⃣ First Use
 
-- Uygulama açıldığında veritabanındaki tüm kitaplar otomatik olarak listelenir
-- Yeni kitap eklemek için form alanlarını doldurup **Save** butonuna tıklayın
-- Mevcut bir kitabı düzenlemek için tablodan seçin ve **Update** butonuna tıklayın
+- When the application opens, all books in the database are automatically listed
+- To add a new book, fill in the form fields and click the **Save** button
+- To edit an existing book, select it from the table and click the **Update** button
 
 ---
 
-## 💾 Veritabanı Yapısı
+## 💾 Database Structure
 
-### Books Tablosu
+### Books Table
 
 ![Database Structure](Images/DB.png)
 
-| Sütun Adı | Veri Tipi | Nullable | Açıklama |
-|-----------|-----------|----------|----------|
-| **Id** | INT | ❌ | Primary Key, Identity (Otomatik artan) |
-| **Title** | NVARCHAR(200) | ❌ | Kitap başlığı (Zorunlu) |
-| **Author** | NVARCHAR(100) | ❌ | Yazar adı (Zorunlu) |
-| **Genre** | NVARCHAR(50) | ✅ | Kitap türü |
-| **Language** | NVARCHAR(50) | ✅ | Kitap dili |
-| **Publisher** | NVARCHAR(100) | ✅ | Yayınevi |
-| **PageCount** | INT | ✅ | Sayfa sayısı |
-| **PublicationYear** | INT | ✅ | Yayın yılı |
+| Column Name | Data Type | Nullable | Description |
+|-------------|-----------|----------|-------------|
+| **Id** | INT | ❌ | Primary Key, Identity (Auto-increment) |
+| **Title** | NVARCHAR(200) | ❌ | Book title (Required) |
+| **Author** | NVARCHAR(100) | ❌ | Author name (Required) |
+| **Genre** | NVARCHAR(50) | ✅ | Book genre |
+| **Language** | NVARCHAR(50) | ✅ | Book language |
+| **Publisher** | NVARCHAR(100) | ✅ | Publisher |
+| **PageCount** | INT | ✅ | Number of pages |
+| **PublicationYear** | INT | ✅ | Publication year |
 
-### İlişkiler
+### Relationships
 
-- **Primary Key**: `Id` (Identity, otomatik artan)
-- **Index**: `Id` üzerinde clustered index
+- **Primary Key**: `Id` (Identity, auto-increment)
+- **Index**: Clustered index on `Id`
 
-### Veri Tipleri Açıklaması
+### Data Type Descriptions
 
-- **INT**: Tam sayı değerleri için
-- **NVARCHAR**: Unicode karakter dizileri için (Türkçe karakter desteği)
-- **IDENTITY(1,1)**: Otomatik artan sayı (1'den başlar, 1'er artar)
+- **INT**: For integer values
+- **NVARCHAR**: For Unicode character strings (supports Turkish characters)
+- **IDENTITY(1,1)**: Auto-increment number (starts at 1, increments by 1)
 
 ---
 
-## 📖 Kullanım Kılavuzu
+## 📖 Usage Guide
 
-### 🆕 Yeni Kitap Ekleme
+### 🆕 Adding a New Book
 
-1. Form alanlarını doldurun:
-   - **Title**: Kitap başlığı (zorunlu)
-   - **Author**: Yazar adı (zorunlu)
-   - **Genre**: Kitap türü
-   - **Language**: Kitap dili
-   - **Publisher**: Yayınevi
-   - **PageCount**: Sayfa sayısı
-   - **PublicationYear**: Yayın yılı
-2. **Save** (Yeşil) butonuna tıklayın
-3. Başarı mesajını görüntüleyin
-4. Kitap listesinde yeni eklenen kitabı görün
+1. Fill in the form fields:
+   - **Title**: Book title (required)
+   - **Author**: Author name (required)
+   - **Genre**: Book genre
+   - **Language**: Book language
+   - **Publisher**: Publisher
+   - **PageCount**: Number of pages
+   - **PublicationYear**: Publication year
+2. Click the **Save** (Green) button
+3. View the success message
+4. See the newly added book in the book list
 
-> **Not**: ID alanı otomatik olarak oluşturulur ve düzenlenemez.
+> **Note**: The ID field is automatically generated and cannot be edited.
 
-### ✏️ Kitap Güncelleme
+### ✏️ Updating a Book
 
-1. DataGridView'den güncellemek istediğiniz kitaba tıklayın
-2. Form alanları otomatik olarak doldurulur
-3. İstediğiniz alanları düzenleyin
-4. **Update** (Sarı) butonuna tıklayın
-5. Başarı mesajını görüntüleyin
-6. Güncellenmiş bilgileri listede görün
+1. Click on the book you want to update from DataGridView
+2. Form fields are automatically filled
+3. Edit the desired fields
+4. Click the **Update** (Yellow) button
+5. View the success message
+6. See the updated information in the list
 
-> **Not**: ID alanı boşsa güncelleme yapılamaz.
+> **Note**: Update cannot be performed if the ID field is empty.
 
-### 🗑️ Kitap Silme
+### 🗑️ Deleting a Book
 
-1. DataGridView'den silmek istediğiniz kitaba tıklayın
-2. Kitap bilgileri form alanlarına yüklenir
-3. **Delete** (Kırmızı) butonuna tıklayın
-4. Onay mesajını görüntüleyin
-5. Kitap listeden kaldırılır
+1. Click on the book you want to delete from DataGridView
+2. Book information is loaded into form fields
+3. Click the **Delete** (Red) button
+4. View the confirmation message
+5. Book is removed from the list
 
-> **⚠️ Uyarı**: Silme işlemi geri alınamaz!
+> **⚠️ Warning**: Deletion cannot be undone!
 
-### 🔍 Arama Yapma
+### 🔍 Searching
 
-1. Sağ alttaki **Search** kutusuna arama terimi yazın
-2. Sonuçlar anlık olarak filtrelenir
-3. Arama şu alanlarda yapılır:
+1. Type a search term in the **Search** box at the bottom right
+2. Results are filtered in real-time
+3. Search is performed in the following fields:
    - ID
-   - Başlık (Title)
-   - Yazar (Author)
-   - Tür (Genre)
-4. Arama kutusunu temizleyerek tüm kitapları tekrar görüntüleyin
+   - Title
+   - Author
+   - Genre
+4. Clear the search box to view all books again
 
-**Arama Örnekleri:**
-- "1984" → ID veya başlıkta "1984" içeren kitaplar
-- "Orwell" → Yazar adında "Orwell" içeren kitaplar
-- "Fiction" → Türünde "Fiction" içeren kitaplar
+**Search Examples:**
+- "1984" → Books containing "1984" in ID or title
+- "Orwell" → Books with "Orwell" in author name
+- "Fiction" → Books with "Fiction" in genre
 
-### 🧹 Formu Temizleme
+### 🧹 Clearing the Form
 
-- **Clear** (Mavi) butonuna tıklayarak tüm form alanlarını temizleyebilirsiniz
-- Yeni kitap eklemek için formu temizlemek yararlıdır
+- Click the **Clear** (Blue) button to clear all form fields
+- Clearing the form is useful when adding a new book
 
-### 📊 Veri Görüntüleme
+### 📊 Data Display
 
-- Tüm kitaplar DataGridView'de tablo formatında görüntülenir
-- Sütunlar otomatik olarak genişletilir
-- Tablo salt okunur moddadır (doğrudan düzenleme yapılamaz)
-- Bir satıra tıklayarak kitap detaylarını görüntüleyebilirsiniz
+- All books are displayed in table format in DataGridView
+- Columns are automatically expanded
+- The table is in read-only mode (direct editing is not possible)
+- Click on a row to view book details
 
 ---
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
 LibraryTrackingSystem/
 │
-├── 📄 Form1.cs                    # Ana form mantığı ve CRUD işlemleri
-├── 📄 Form1.Designer.cs          # Form tasarımı ve UI bileşenleri
-├── 📄 Form1.resx                 # Form kaynak dosyası
-├── 📄 Program.cs                  # Uygulama giriş noktası
-├── 📄 App.config                  # Uygulama yapılandırma dosyası
-├── 📄 LibraryTrackingSystem.csproj # Proje dosyası
+├── 📄 Form1.cs                    # Main form logic and CRUD operations
+├── 📄 Form1.Designer.cs          # Form design and UI components
+├── 📄 Form1.resx                 # Form resource file
+├── 📄 Program.cs                  # Application entry point
+├── 📄 App.config                  # Application configuration file
+├── 📄 LibraryTrackingSystem.csproj # Project file
 │
-├── 📁 Images/                     # Görsel dosyalar
-│   ├── 🖼️ DB.png                 # Veritabanı görseli
-│   ├── 🖼️ Linq.png               # LINQ görseli
-│   ├── 🖼️ SqlFileStructure.png   # SQL yapı görseli
-│   └── 🖼️ WF.png                 # Windows Forms görseli
+├── 📁 Images/                     # Image files
+│   ├── 🖼️ DB.png                 # Database image
+│   ├── 🖼️ Linq.png               # LINQ image
+│   ├── 🖼️ SqlFileStructure.png   # SQL structure image
+│   └── 🖼️ WF.png                 # Windows Forms image
 │
-├── 📁 Properties/                 # Proje özellikleri
-│   ├── 📄 AssemblyInfo.cs        # Assembly bilgileri
-│   ├── 📄 Resources.Designer.cs  # Kaynak dosyası designer
-│   ├── 📄 Resources.resx         # Kaynak dosyası
-│   ├── 📄 Settings.Designer.cs   # Ayarlar designer
-│   └── 📄 Settings.settings      # Uygulama ayarları
+├── 📁 Properties/                 # Project properties
+│   ├── 📄 AssemblyInfo.cs        # Assembly information
+│   ├── 📄 Resources.Designer.cs  # Resource file designer
+│   ├── 📄 Resources.resx         # Resource file
+│   ├── 📄 Settings.Designer.cs   # Settings designer
+│   └── 📄 Settings.settings      # Application settings
 │
-├── 📁 bin/                        # Derlenmiş dosyalar
-│   └── 📁 Debug/                  # Debug build çıktıları
+├── 📁 bin/                        # Compiled files
+│   └── 📁 Debug/                  # Debug build outputs
 │
-└── 📁 obj/                        # Geçici derleme dosyaları
-    └── 📁 Debug/                  # Debug obj dosyaları
+└── 📁 obj/                        # Temporary build files
+    └── 📁 Debug/                  # Debug obj files
 ```
 
-### Dosya Açıklamaları
+### File Descriptions
 
-| Dosya | Açıklama |
-|-------|----------|
-| `Form1.cs` | Ana form sınıfı, tüm iş mantığı burada |
-| `Form1.Designer.cs` | Form tasarımı, UI kontrolleri |
-| `Form1.resx` | Form kaynak dosyası (ikonlar, görseller) |
-| `Program.cs` | Uygulama giriş noktası, Main metodu |
-| `App.config` | Uygulama yapılandırma ayarları |
-| `LibraryTrackingSystem.csproj` | Proje dosyası, referanslar ve ayarlar |
+| File | Description |
+|------|-------------|
+| `Form1.cs` | Main form class, all business logic is here |
+| `Form1.Designer.cs` | Form design, UI controls |
+| `Form1.resx` | Form resource file (icons, images) |
+| `Program.cs` | Application entry point, Main method |
+| `App.config` | Application configuration settings |
+| `LibraryTrackingSystem.csproj` | Project file, references and settings |
 
 ---
 
-## 🎨 Ekran Görüntüleri
+## 🎨 Screenshots
 
-### Ana Form
+### Main Form
 
-Uygulama açıldığında tüm kitaplar DataGridView'de listelenir ve form alanları kullanıma hazır hale gelir.
+When the application opens, all books are listed in DataGridView and form fields are ready to use.
 
 ![Windows Forms Application](Images/WF.png)
 
-### Özellikler
+### Features
 
-- **Modern UI**: Renkli butonlar ve düzenli form yapısı
-- **Responsive Design**: Otomatik boyutlandırma
-- **User-Friendly**: Kolay kullanımlı arayüz
+- **Modern UI**: Colorful buttons and organized form structure
+- **Responsive Design**: Automatic sizing
+- **User-Friendly**: Easy-to-use interface
 - **Color-Coded Buttons**: 
-  - 🟢 Yeşil: Save (Kaydet)
-  - 🟡 Sarı: Update (Güncelle)
-  - 🔴 Kırmızı: Delete (Sil)
-  - 🔵 Mavi: Clear (Temizle)
+  - 🟢 Green: Save
+  - 🟡 Yellow: Update
+  - 🔴 Red: Delete
+  - 🔵 Blue: Clear
 
-### Veritabanı Yapısı
+### Database Structure
 
 ![Database Structure](Images/DB.png)
 
-### SQL Yapısı
+### SQL Structure
 
 ![SQL File Structure](Images/SqlFileStructure.png)
 
 ---
 
-## 🔧 Geliştirme Notları
+## 🔧 Development Notes
 
-### Kod Yapısı
+### Code Structure
 
 #### Form1.cs
-- **Connection Management**: Her işlemde bağlantı açılıp kapanır
-- **CRUD Operations**: Create, Read, Update, Delete işlemleri
-- **Data Binding**: DataGridView DataTable ile bağlanır
-- **Event Handlers**: Buton tıklamaları ve hücre seçimleri için event handler'lar
+- **Connection Management**: Connection is opened and closed for each operation
+- **CRUD Operations**: Create, Read, Update, Delete operations
+- **Data Binding**: DataGridView is bound with DataTable
+- **Event Handlers**: Event handlers for button clicks and cell selections
 
-#### Önemli Metodlar
+#### Important Methods
 
 ```csharp
-// Kitap listeleme
+// List books
 void List()
 
-// Form alanlarını temizleme
+// Clear form fields
 void Clear()
 
-// Kitap ekleme
+// Add book
 private void btnSave_Click(object sender, EventArgs e)
 
-// Kitap güncelleme
+// Update book
 private void btnUpdate_Click(object sender, EventArgs e)
 
-// Kitap silme
+// Delete book
 private void btnDelete_Click(object sender, EventArgs e)
 
-// Arama
+// Search
 private void txtSearch_TextChanged(object sender, EventArgs e)
 ```
 
-### Güvenlik
+### Security
 
-- ✅ **Parameterized Queries**: SQL injection koruması için parametreli sorgular kullanılır
-- ✅ **Input Sanitization**: Arama için özel karakterler temizlenir
-- ✅ **Read-Only Grid**: DataGridView salt okunur modda
+- ✅ **Parameterized Queries**: Parameterized queries are used for SQL injection protection
+- ✅ **Input Sanitization**: Special characters are cleaned for search
+- ✅ **Read-Only Grid**: DataGridView is in read-only mode
 
-### Performans
+### Performance
 
-- ✅ **Efficient Queries**: Optimize edilmiş SQL sorguları
-- ✅ **DataTable Caching**: Veriler DataTable'da önbelleğe alınır
-- ✅ **Connection Management**: Her işlemde bağlantı açılıp kapanır
+- ✅ **Efficient Queries**: Optimized SQL queries
+- ✅ **DataTable Caching**: Data is cached in DataTable
+- ✅ **Connection Management**: Connection is opened and closed for each operation
 
-### İyileştirme Önerileri
+### Improvement Suggestions
 
-- 🔄 Connection string'i `App.config` dosyasına taşınabilir
-- 🔄 Try-catch blokları ile hata yönetimi eklenebilir
-- 🔄 Veri doğrulama (validation) eklenebilir
-- 🔄 Repository pattern kullanılabilir
-- 🔄 Unit testler yazılabilir
-- 🔄 Using statement'ları ile connection yönetimi iyileştirilebilir
-- 🔄 Async/await pattern kullanılabilir
-- 🔄 Entity Framework veya Dapper gibi ORM'ler kullanılabilir
-
----
-
-## 🤝 Katkıda Bulunma
-
-Katkılarınızı bekliyoruz! Bu projeyi geliştirmek için:
-
-### Nasıl Katkıda Bulunabilirsiniz?
-
-1. ⭐ **Yıldız Verin**: Projeyi beğendiyseniz yıldız vermeyi unutmayın!
-2. 🐛 **Hata Bildirin**: Bir hata bulduysanız Issue açın
-3. 💡 **Öneride Bulunun**: Yeni özellikler için Issue açın
-4. 🔧 **Kod Katkısı**: Pull Request gönderin
-
-### Pull Request Gönderme Adımları
-
-1. Bu repository'yi fork edin
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
-
-### Katkı Kuralları
-
-- Kod standartlarına uyun
-- Yorum satırları ekleyin
-- Test edin
-- README'yi güncelleyin (gerekirse)
+- 🔄 Connection string can be moved to `App.config` file
+- 🔄 Error handling can be added with try-catch blocks
+- 🔄 Data validation can be added
+- 🔄 Repository pattern can be used
+- 🔄 Unit tests can be written
+- 🔄 Connection management can be improved with using statements
+- 🔄 Async/await pattern can be used
+- 🔄 ORMs like Entity Framework or Dapper can be used
 
 ---
 
-## 📞 İletişim
+## 🤝 Contributing
 
-Sorularınız, önerileriniz veya hata bildirimleri için:
+We welcome your contributions! To help improve this project:
 
-- 📧 **GitHub Issues**: [Issues Sayfası](https://github.com/Kaaner4mir/WindowsFormLabor/issues)
-- 👤 **Geliştirici**: Kaaner4mir
+### How Can You Contribute?
+
+1. ⭐ **Star the Project**: If you liked the project, don't forget to star it!
+2. 🐛 **Report Bugs**: If you found a bug, open an Issue
+3. 💡 **Suggest Features**: Open an Issue for new features
+4. 🔧 **Code Contribution**: Submit a Pull Request
+
+### Steps to Submit a Pull Request
+
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Create a Pull Request
+
+### Contribution Guidelines
+
+- Follow code standards
+- Add comments
+- Test your code
+- Update README if necessary
+
+---
+
+## 📞 Contact
+
+For questions, suggestions, or bug reports:
+
+- 📧 **GitHub Issues**: [Issues Page](https://github.com/Kaaner4mir/WindowsFormLabor/issues)
+- 👤 **Developer**: Kaaner4mir
 - 🔗 **Repository**: [WindowsFormLabor](https://github.com/Kaaner4mir/WindowsFormLabor)
 
 ---
 
-## 📝 Lisans
+## ⭐ Don't Forget to Star!
 
-Bu proje eğitim amaçlı geliştirilmiştir. İstediğiniz gibi kullanabilir ve değiştirebilirsiniz.
-
-```
-MIT License
-
-Copyright (c) 2025 Kaaner4mir
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
-
-## ⭐ Yıldız Vermeyi Unutmayın!
-
-Bu projeyi beğendiyseniz, yıldız vermeyi unutmayın! ⭐
+If you liked this project, don't forget to star it! ⭐
 
 [![GitHub stars](https://img.shields.io/github/stars/Kaaner4mir/WindowsFormLabor.svg?style=social&label=Star)](https://github.com/Kaaner4mir/WindowsFormLabor)
 
 ---
 
-## 🙏 Teşekkürler
+## 🙏 Thanks
 
-Bu projeyi kullandığınız için teşekkür ederiz!
+Thank you for using this project!
 
-- 📚 Kütüphane yönetimini kolaylaştırmak için geliştirilmiştir
-- 🎓 Eğitim amaçlı kullanılabilir
-- 💻 Öğrenme ve geliştirme için açık kaynak
+- 📚 Developed to make library management easier
+- 🎓 Can be used for educational purposes
+- 💻 Open source for learning and development
 
 ---
 
-## 📌 Önemli Notlar
+## 📌 Important Notes
 
-> **⚠️ Production Kullanımı**: Bu uygulama eğitim amaçlı geliştirilmiştir. Production ortamında kullanmadan önce güvenlik ve performans iyileştirmeleri yapılması önerilir.
+> **⚠️ Production Use**: This application is developed for educational purposes. It is recommended to make security and performance improvements before using it in a production environment.
 
-> **💡 İpuçları**: 
-> - Connection string'i güvenli bir şekilde saklayın
-> - Düzenli veritabanı yedekleri alın
-> - Hata yönetimi ekleyin
-> - Loglama mekanizması ekleyin
+> **💡 Tips**: 
+> - Store connection string securely
+> - Take regular database backups
+> - Add error handling
+> - Add logging mechanism
 
 ---
 
 <div align="center">
 
-**⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın! ⭐**
+**⭐ If you liked this project, don't forget to star it! ⭐**
 
 Made with ❤️ by [Kaaner4mir](https://github.com/Kaaner4mir)
 
-*Son Güncelleme: 2025*
+*Last Updated: 2025*
 
 </div>
-
