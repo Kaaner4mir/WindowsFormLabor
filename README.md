@@ -1,18 +1,3 @@
-# 💻 WindowsFormLabor
-
-<div align="center">
-
-**A collection of Windows Forms applications built with C#**
-
-[![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4?style=for-the-badge&logo=dotnet)](https://dotnet.microsoft.com/)
-[![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet)](https://dotnet.microsoft.com/)
-[![Windows Forms](https://img.shields.io/badge/Windows%20Forms-WinForms-0078D4?style=for-the-badge&logo=windows)](https://learn.microsoft.com/dotnet/desktop/winforms/)
-[![C#](https://img.shields.io/badge/C%23-Modern-239120?style=for-the-badge&logo=c-sharp)](https://learn.microsoft.com/dotnet/csharp/)
-
-</div>
-
----
-
 ## 📋 Table of Contents
 
 - [About the Repository](#-about-the-repository)
